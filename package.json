@@ -1,6 +1,6 @@
 {
   "name": "@if24b262/password-utilities",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A small, useful JavaScript library that provides password utility functions",
   "type": "commonjs",
   "source": "src/index.js",
@@ -26,6 +26,7 @@
   ],
   "license": "MIT",
   "devDependencies": {
-    "jest": "^29.7.0"
+    "jest": "^29.7.0",
+    "microbundle": "^0.15.1"
   }
 }

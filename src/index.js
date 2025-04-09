@@ -8,7 +8,7 @@ module.exports = {
 function generateStrongPassword(length = 12) {
   const allowedPasswordCharacters =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+";
-  const strongPassword = Array.from({ length }, () => {
+  var strongPassword = Array.from({ length }, () => {
     const randomAllowedPasswordCharacterIndex = Math.floor(
       Math.random() * allowedPasswordCharacters.length
     );
@@ -17,6 +17,9 @@ function generateStrongPassword(length = 12) {
     );
     return randomAllowedPasswordCharacter;
   }).join("");
+  while (!isStrongPassword(strongPassword)) {
+    strongPassword = generateStrongPassword(length);
+  }
   return strongPassword;
 }
 

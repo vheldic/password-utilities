@@ -1,7 +1,7 @@
 # @if24b262/password-utilities 
 
 > A small utility library that helps you work with passwords.  
-> Version 1.0.1 includes patch fix: Previously generateStrongPassword function could return an unsafe password
+> Version 1.0.2 includes patch fix: generateStrongPassword function automatically uses a length of 8 when using smaller number 
 
 ## Table of Contents
 

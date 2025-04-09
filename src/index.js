@@ -6,6 +6,8 @@ module.exports = {
 };
 
 function generateStrongPassword(length = 12) {
+  if (length < 8)
+    length = 8;
   const allowedPasswordCharacters =
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+";
   var strongPassword = Array.from({ length }, () => {

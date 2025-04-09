@@ -1,6 +1,6 @@
 {
   "name": "@if24b262/password-utilities",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A small, useful JavaScript library that provides password utility functions",
   "type": "commonjs",
   "source": "src/index.js",

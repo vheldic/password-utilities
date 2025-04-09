@@ -7,7 +7,7 @@ test("Check if password is strong", () => {
 });
 
 test("Generate a strong password based on length", () => {
-  expect(generateStrongPassword(1).length).toBe(1);
+  expect(generateStrongPassword(1).length).toBe(8);
   expect(generateStrongPassword(12).length).toBe(12);
   expect(generateStrongPassword().length).toBe(12);
 });

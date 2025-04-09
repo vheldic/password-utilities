@@ -1,0 +1,31 @@
+{
+  "name": "@if24b262/password-utilities",
+  "version": "1.0.0",
+  "description": "A small, useful JavaScript library that provides password utility functions",
+  "type": "commonjs",
+  "source": "src/index.js",
+  "main": "dist/index.js",
+  "umd:main": "dist/index.umd.js",
+  "module": "dist/index.m.js",
+  "scripts": {
+    "build": "microbundle",
+    "pretest": "npm run build",
+    "test": "npx jest --coverage"
+  },
+  "author": "Heldic Velid <if24b262@technikum-wien.at>, Posch Jennifer <if23b171@technikum-wien.at>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vheldic/password-utilities.git"
+  },
+  "keywords": [
+    "password",
+    "utilities",
+    "strong",
+    "generate",
+    "functional"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
